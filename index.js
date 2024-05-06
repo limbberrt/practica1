@@ -36,7 +36,7 @@ const PORT = 3100;
         if (nombreEncontrado) {
             res.json(nombreEncontrado);
         } else {
-            res.status(404).json({mensaje : 'Nombre no encontrado'});
+            res.status(404).json({mensaje : 'Texto no encontrado'});
         }
     });
  
@@ -46,7 +46,7 @@ app.get('/libros/publicacion/:nombre', (req, res) => {
     if (namePublicados.length > 0) {
         res.json(namePublicados);
     } else {
-        res.status(404).json({mensaje : 'no se han encontrado '});
+        res.status(404).json({mensaje : 'Nombre no se ha encontrado '});
     }
 });
 
